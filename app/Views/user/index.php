@@ -159,7 +159,7 @@ textarea.form-control{
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="title" class="text-center">Survey Form</h1>
+            <h1 id="title" class="text-center">Contact Form</h1>
             <p id="description" class="text-center">
                 Thank you for taking the time to help us improve the platform
             </p>
