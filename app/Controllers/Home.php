@@ -13,4 +13,9 @@ class Home extends BaseController
         $data['title'] = "Login";
         return view('user/index.php', $data);
     }
+
+    public function setup(){
+        print_r($_POST);
+        die;
+    }
 }
