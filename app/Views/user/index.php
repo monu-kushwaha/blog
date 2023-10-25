@@ -18,7 +18,7 @@
             </p>
         </header>
         <div class="form-wrap">
-            <form id="survey-form" action="<?php echo base_url('Home/setup'); ?>" method="">
+            <form id="survey-form" action="<?= base_url('home/setup'); ?>" method="post">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -35,7 +35,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -58,7 +57,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -96,8 +94,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
@@ -107,13 +103,11 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-4">
                         <button type="submit" id="submit" class="btn btn-primary btn-block">Submit Survey</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
