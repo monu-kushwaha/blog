@@ -15,7 +15,9 @@ class Home extends BaseController
     }
 
     public function setup(){
-        print_r($_POST);
-        die;
+        $name = $this->input->post('name');
+
+        echo $name;
+        die('here');
     }
 }

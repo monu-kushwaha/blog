@@ -7,4 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/user', 'Home::user');
-$routes->get('home/setup/(:alphanum)', 'Home::setup');
+$routes->post('setup', 'Home::setup');
+
