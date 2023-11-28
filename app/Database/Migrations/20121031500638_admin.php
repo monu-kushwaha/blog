@@ -8,7 +8,7 @@ class admin extends Migration
 {
     public function up()
     {
-        $this->dbforge->add_field(array(
+        $this->forge->addField(array(
             'id' => array(
                 'type'           => 'INT',
                 'constraint'     => 5,
@@ -32,13 +32,17 @@ class admin extends Migration
                 'default' => 'user',
                 'null' => false,
             ),
+            'status' => array(
+                'type' => 'INT',
+                'default' => '0',
+            ),
         ));
-        $this->forge->addKey('blog_id', true);
-        $this->forge->createTable('blog');
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('admin');
     }
 
     public function down()
     {
-        $this->forge->dropTable('blog');
+        $this->forge->dropTable('admin');
     }
 }
