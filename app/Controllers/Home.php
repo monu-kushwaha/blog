@@ -10,6 +10,7 @@ class Home extends BaseController
     }
 
     public function user(){
+        echo base_url();die;
         $data['title'] = "Login";
         return view('user/index.php', $data);
     }
